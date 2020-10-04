@@ -1,14 +1,14 @@
 package com.example.demo.model;
 
 public class User {
-    private long id;
-    private String name;
-    private String surname;
+    private static long id;
+    private static String name;
+    private static String surname;
 
     public User(long id, String name, String surname){
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
+        User.id = id;
+        User.name = name;
+        User.surname = surname;
     }
 
     public static long getId() {
@@ -16,7 +16,7 @@ public class User {
     }
 
     public void setId(long id) {
-        this.id = id;
+        User.id = id;
     }
 
     public static String getName() {
@@ -24,7 +24,7 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
+        User.name = name;
     }
 
     public static String getSurname() {
@@ -32,7 +32,7 @@ public class User {
     }
 
     public void setSurname(String surname) {
-        this.surname = surname;
+        User.surname = surname;
     }
 }
 
